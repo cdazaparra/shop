@@ -1,0 +1,45 @@
+@import "./colors.sass"
+.Imagen
+  display: grid
+  justify-content: center
+  align-items: center
+  justify-items: center
+  .ImagenComprar
+    display: grid
+    justify-content: center
+    align-items: center
+    justify-items: center
+    margin-top: -60px
+    background-color: $bakgroungL
+    border-radius: 15%
+    padding: 5px
+    z-index: 5
+    border: 1px solid black
+  .ImagenContainer
+    display: grid
+    position: relative
+    margin-top: -430px
+    grid-template-columns: 1fr 1fr 1fr
+    align-items: center
+    justify-content: center
+    justify-items: center
+    width: 100vw
+    height: 90px
+    z-index: 0
+    .ImagenDesing
+      width: 100px
+    .ImagenContainerR
+      display: grid
+      justify-content: end
+      justify-items: end
+      align-items: center
+      margin-left: 50px
+    .ImagenContainerL
+      display: grid
+      justify-content: start
+      justify-items: start
+      align-items: center
+      margin-right: 50px
+    .ImagenBtnR,.ImagenBtnL
+      border: none
+      background-color: transparent

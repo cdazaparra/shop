@@ -1,0 +1,51 @@
+@import "./colors.sass"
+.Sliders
+  margin-top: 80px
+  height: 80vh
+  display: grid
+  justify-content: center
+  align-items: center
+  justify-items: center
+  grid-template-rows: 100px 20px 400px
+  .SlidersTitle
+    color: $title_color
+  .SlidersColors
+    display: grid
+    grid-template-columns: repeat(6,1fr)
+    width: 100%
+    align-items: center
+    justify-content: center
+    justify-items: center
+    .SlidersColorsAmarillo,
+    .SlidersColorsAzul,
+    .SlidersColorsNegro,
+    .SlidersColorsRojo,
+    .SlidersColorsBlanco,
+    .SlidersColorsMorado
+      display: grid
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      margin: 5px
+      border: 1px solid $shirt_colorBlack
+    .SlidersColorsAmarillo
+      background-color: $shirt_colorYellow
+    .SlidersColorsAzul
+      background-color: $shirt_colorBlue
+    .SlidersColorsNegro
+      background-color: $shirt_colorBlack
+    .SlidersColorsRojo
+      background-color: $shirt_colorRed
+    .SlidersColorsBlanco
+      background-color: $shirt_colorWhite
+    .SlidersColorsMorado
+      background-color: $shirt_colorPurple
+  .SlidersContainer
+    display: grid
+    justify-content: center
+    align-items: center
+    justify-items: center
+    .SlidersContainerImg
+      display: grid
+      margin: 10px
+      width: 80%

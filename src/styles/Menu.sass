@@ -1,0 +1,30 @@
+@import "./colors.sass"
+.dark,.light
+  top: 0
+  left: 0
+  position: fixed
+  width: 100%
+  height: 80px
+  display: grid
+  grid-template-columns: 1fr 1fr
+  align-items: center
+  justify-content: center
+  z-index: 1
+  .MenuMobileLogo
+    display: grid
+    justify-items: start
+    .MenuMobileLogoImg
+      width: 50%
+      margin: 0px 10px
+  .MenuMobileCart
+    display: grid
+    margin: 0px 10px
+    justify-content: end
+    justify-items: end
+    .MenuMobileCartImg
+      width: 40px
+      display: grid
+.dark
+  background-color: $bakgroung_dark
+.light
+  background-color: $bakgroung_light
