@@ -1,22 +1,23 @@
 import React from "react";
 import { useState } from "react";
-import { useContext } from "react";
-import "../styles/Imagen.sass";
 import { designsGame } from "../helpers/data";
+import "../styles/Imagen.sass";
 import btnLeft from "../assets/icons/left.png";
 import btnRight from "../assets/icons/right.png";
 const Imagen = () => {
-  const cantidad = designsGame.mario?.length;
   const [imagenActual, setImagenActual] = useState(0);
+  const cantidad = designsGame.Mario?.length;
   const siguienteImagen = () => {
     setImagenActual(imagenActual === cantidad - 1 ? 0 : imagenActual + 1);
   };
   const anteriorImagen = () => {
     setImagenActual(imagenActual === 0 ? cantidad - 1 : imagenActual - 1);
   };
-  console.log(cantidad);
-  if (!Array.isArray(designsGame.mario) || cantidad === 0) return;
-  return designsGame.mario.map((image, index) => {
+  const handleImg = (picture) => {
+    setImg(picture);
+  };
+  if (!Array.isArray(designsGame.Mario) || cantidad === 0) return;
+  return designsGame.Mario.map((image, index) => {
     return (
       imagenActual === index && (
         <div key={index} className="Imagen">
