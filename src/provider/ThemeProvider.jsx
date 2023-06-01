@@ -8,9 +8,11 @@ import ArrowUpL from "../assets/icons/ArrowL.png";
 import ArrowUpD from "../assets/icons/ArrowD.png";
 import MenuL from "../assets/icons/btnMenuL.png";
 import MenuD from "../assets/icons/btnMenuD.png";
+import CartD from "../assets/icons/CartD.png";
+import CartL from "../assets/icons/CartL.png";
 const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(false);
-  let BGcolor, BGIcolor, imgBG, Logo, Arrow, imgMenu;
+  let BGcolor, BGIcolor, imgBG, Logo, Arrow, imgMenu, Cart;
   const handleTheme = () => {
     setTheme(!theme);
   };
@@ -21,12 +23,14 @@ const ThemeProvider = ({ children }) => {
     BGcolor = "fLight";
     Arrow = ArrowUpD;
     imgMenu = MenuL;
+    Cart = CartD;
   } else {
     BGIcolor = "dark";
     imgBG = sunImg;
     Logo = LogoL;
     BGcolor = "fDark";
     Arrow = ArrowUpL;
+    Cart = CartL;
     imgMenu = MenuD;
   }
   return (
@@ -38,7 +42,8 @@ const ThemeProvider = ({ children }) => {
         Logo,
         BGcolor,
         Arrow,
-        imgMenu
+        imgMenu,
+        Cart
       }}
     >
       {children}

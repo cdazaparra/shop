@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CamisetasContext } from "../context/CamisetasContext";
 const CamisetasProviders = ({ children }) => {
-  const [camiseta, setCamiseta] = useState("black1");
+  const [camiseta, setCamiseta] = useState("black2");
   let color;
   const handleCamiseta = (color) => {
     setCamiseta(color);
@@ -10,7 +10,8 @@ const CamisetasProviders = ({ children }) => {
     <CamisetasContext.Provider
       value={{
         handleCamiseta,
-        camiseta
+        camiseta,
+        color
       }}
     >
       {children}

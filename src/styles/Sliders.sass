@@ -1,138 +1,142 @@
 @import "./colors.sass"
+.SlidersColors
+  bottom: 120px
+  position: fixed
+  height: 40px
+  width: 80%
+  display: grid
+  justify-content: center
+  align-items: center
+  grid-template-columns: repeat(13, 18px)
+  background-color: $shirt_colorWhite1
+  z-index: 10
+  border-radius: 20px
+  .SlidersColorsBlack1,
+  .SlidersColorsBlack2,
+  .SlidersColorsBlack3,
+  .SlidersColorsBlack4,
+  .SlidersColorsBlue1,
+  .SlidersColorsBlue2,
+  .SlidersColorsBlue3,
+  .SlidersColorsGreen1,
+  .SlidersColorsGreen2,
+  .SlidersColorsYellow1,
+  .SlidersColorsYellow2,
+  .SlidersColorsYellow3,
+  .SlidersColorsYellow4,
+  .SlidersColorsYellow5,
+  .SlidersColorsRed1,
+  .SlidersColorsRed2,
+  .SlidersColorsRed3,
+  .SlidersColorsOrange1,
+  .SlidersColorsOrange2,
+  .SlidersColorsOrange3,
+  .SlidersColorsOrange4,
+  .SlidersColorsPurple1,
+  .SlidersColorsPurple2,
+  .SlidersColorsPurple3,
+  .SlidersColorsPurple4,
+  .SlidersColorsWhite1,
+  .SlidersColorsAzul,
+  .SlidersColorsNegro,
+  .SlidersColorsRojo,
+  .SlidersColorsBlanco,
+  .SlidersColorsMorado
+    display: grid
+    width: 15px
+    height: 15px
+    border-radius: 50%
+    margin: 0
+    padding: 0
+    border: 1px solid $shirt_colorBlack
+  .SlidersColorsBlack1
+    background-color: $shirt_colorBlack1
+  .SlidersColorsBlack2
+    background-color: $shirt_colorBlack2
+  .SlidersColorsBlack3
+    background-color: $shirt_colorBlack3
+  .SlidersColorsBlue1
+    background-color: $shirt_colorBlue1
+  .SlidersColorsBlue2
+    background-color: $shirt_colorBlue2
+  .SlidersColorsBlue3
+    background-color: $shirt_colorBlue3
+  .SlidersColorsGreen1
+    background-color: $shirt_colorGreen1
+  .SlidersColorsGreen2
+    background-color: $shirt_colorGreen2
+  .SlidersColorsYellow1
+    background-color: $shirt_colorYellow1
+  .SlidersColorsYellow2
+    background-color: $shirt_colorYellow2
+  .SlidersColorsYellow3
+    background-color: $shirt_colorYellow3
+  .SlidersColorsYellow4
+    background-color: $shirt_colorYellow4
+  .SlidersColorsYellow5
+    background-color: $shirt_colorYellow5
+  .SlidersColorsRed1
+    background-color: $shirt_colorRed1
+  .SlidersColorsRed2
+    background-color: $shirt_colorRed2
+  .SlidersColorsRed3
+    background-color: $shirt_colorRed3
+  .SlidersColorsOrange1
+    background-color: $shirt_colorOrange1
+  .SlidersColorsOrange2
+    background-color: $shirt_colorOrange2
+  .SlidersColorsOrange3
+    background-color: $shirt_colorOrange3
+  .SlidersColorsOrange4
+    background-color: $shirt_colorOrange4
+  .SlidersColorsPurple1
+    background-color: $shirt_colorPurple1
+  .SlidersColorsPurple2
+    background-color: $shirt_colorPurple2
+  .SlidersColorsPurple3
+    background-color: $shirt_colorPurple3
+  .SlidersColorsPurple4
+    background-color: $shirt_colorPurple4
+  .SlidersColorsWhite1
+    background-color: $shirt_colorWhite1
+  .SlidersColorsAzul
+    background-color: $shirt_colorBlue
+  .SlidersColorsNegro
+    background-color: $shirt_colorBlack
+  .SlidersColorsRojo
+    background-color: $shirt_colorRed
+  .SlidersColorsBlanco
+    background-color: $shirt_colorWhite
+  .SlidersColorsMorado
+    background-color: $shirt_colorPurple
+
 .Sliders
-  margin-top: 80px
-  height: 100vh
   display: grid
   justify-content: center
   align-items: center
   justify-items: center
-  grid-template-rows: 250px 500px
+  margin: 40px 0
   .SlidersContainerData
-    margin-top: 150px
+    margin-top: 50px
     display: grid
     justify-content: center
     align-items: center
     justify-items: center
+    grid-template-rows: 80px 600px
     .SlidersTitle
       margin-top: 80px
       color: $title_color
       font-size: 50px
-      padding: 0
-      margin: 10px 0
       text-align: center
-    .SlidersColors
       display: grid
-      grid-template-columns: repeat(9,1fr)
       width: 100%
-      align-items: center
-      justify-content: center
-      justify-items: center
-      .SlidersColorsBlack1,
-      .SlidersColorsBlack2,
-      .SlidersColorsBlack3,
-      .SlidersColorsBlack4,
-      .SlidersColorsBlue1,
-      .SlidersColorsBlue2,
-      .SlidersColorsBlue3,
-      .SlidersColorsBlue4,
-      .SlidersColorsGreen1,
-      .SlidersColorsGreen2,
-      .SlidersColorsGreen3,
-      .SlidersColorsGreen4,
-      .SlidersColorsYellow1,
-      .SlidersColorsYellow2,
-      .SlidersColorsYellow3,
-      .SlidersColorsYellow4,
-      .SlidersColorsRed1,
-      .SlidersColorsRed2,
-      .SlidersColorsRed3,
-      .SlidersColorsRed4,
-      .SlidersColorsPurple1,
-      .SlidersColorsPurple2,
-      .SlidersColorsPurple3,
-      .SlidersColorsPurple4,
-      .SlidersColorsWhite1,
-      .SlidersColorsWhite2,
-      .SlidersColorsWhite3,
-      .SlidersColorsAzul,
-      .SlidersColorsNegro,
-      .SlidersColorsRojo,
-      .SlidersColorsBlanco,
-      .SlidersColorsMorado
-        display: grid
-        width: 15px
-        height: 15px
-        border-radius: 50%
-        margin: 5px
-        border: 1px solid $shirt_colorBlack
-      .SlidersColorsBlack1
-        background-color: $shirt_colorBlack1
-      .SlidersColorsBlack2
-        background-color: $shirt_colorBlack2
-      .SlidersColorsBlack3
-        background-color: $shirt_colorBlack3
-      .SlidersColorsBlue1
-        background-color: $shirt_colorBlue1
-      .SlidersColorsBlue2
-        background-color: $shirt_colorBlue2
-      .SlidersColorsBlue3
-        background-color: $shirt_colorBlue3
-      .SlidersColorsBlue4
-        background-color: $shirt_colorBlue4
-      .SlidersColorsGreen1
-        background-color: $shirt_colorGreen1
-      .SlidersColorsGreen2
-        background-color: $shirt_colorGreen2
-      .SlidersColorsGreen3
-        background-color: $shirt_colorGreen3
-      .SlidersColorsGreen4
-        background-color: $shirt_colorGreen4
-      .SlidersColorsYellow1
-        background-color: $shirt_colorYellow1
-      .SlidersColorsYellow2
-        background-color: $shirt_colorYellow2
-      .SlidersColorsYellow3
-        background-color: $shirt_colorYellow3
-      .SlidersColorsYellow4
-        background-color: $shirt_colorYellow4
-      .SlidersColorsRed1
-        background-color: $shirt_colorRed1
-      .SlidersColorsRed2
-        background-color: $shirt_colorRed2
-      .SlidersColorsRed3
-        background-color: $shirt_colorRed3
-      .SlidersColorsRed4
-        background-color: $shirt_colorRed4
-      .SlidersColorsPurple1
-        background-color: $shirt_colorPurple1
-      .SlidersColorsPurple2
-        background-color: $shirt_colorPurple2
-      .SlidersColorsPurple3
-        background-color: $shirt_colorPurple3
-      .SlidersColorsPurple4
-        background-color: $shirt_colorPurple4
-      .SlidersColorsWhite1
-        background-color: $shirt_colorWhite1
-      .SlidersColorsWhite2
-        background-color: $shirt_colorWhite2
-      .SlidersColorsWhite3
-        background-color: $shirt_colorWhite3
-      .SlidersColorsAzul
-        background-color: $shirt_colorBlue
-      .SlidersColorsNegro
-        background-color: $shirt_colorBlack
-      .SlidersColorsRojo
-        background-color: $shirt_colorRed
-      .SlidersColorsBlanco
-        background-color: $shirt_colorWhite
-      .SlidersColorsMorado
-        background-color: $shirt_colorPurple
-  .SlidersContainer
-    display: grid
-    justify-content: center
-    align-items: center
-    justify-items: center
-    .SlidersContainerImg
+    .SlidersContainer
       display: grid
-      margin: 10px
-      width: 85%
+      justify-content: center
+      align-items: center
+      justify-items: center
+      .SlidersContainerImg
+        display: grid
+        width: 300px
+        height: 400px
+        margin: 10px

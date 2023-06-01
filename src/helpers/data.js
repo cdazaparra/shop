@@ -1,4 +1,4 @@
-let id = 0;
+let id = 1;
 const number = () => {
   id = id + 1;
   return id;
@@ -11,6 +11,8 @@ import mario4 from "../assets/images/desings/Mario/mario4.png";
 import mario5 from "../assets/images/desings/Mario/mario5.png";
 import mario6 from "../assets/images/desings/Mario/mario6.png";
 import mario7 from "../assets/images/desings/Mario/mario7.png";
+import mario8 from "../assets/images/desings/Mario/mario8.png";
+import mario9 from "../assets/images/desings/Mario/mario9.png";
 //MUSICA
 import MU1 from "../assets/images/desings/Musica/MU1.png";
 import MU2 from "../assets/images/desings/Musica/MU2.png";
@@ -41,17 +43,13 @@ import lol6 from "../assets/images/desings/Lol/lol6.png";
 import black1 from "../assets/images/tshirt/black1.png";
 import black2 from "../assets/images/tshirt/black2.png";
 import black3 from "../assets/images/tshirt/black3.png";
-import black4 from "../assets/images/tshirt/black4.png";
 // CAMISETAS BLUE
 import blue1 from "../assets/images/tshirt/blue1.png";
 import blue2 from "../assets/images/tshirt/blue2.png";
 import blue3 from "../assets/images/tshirt/blue3.png";
-import blue4 from "../assets/images/tshirt/blue4.png";
 // CAMISETAS GREEN
 import green1 from "../assets/images/tshirt/green1.png";
 import green2 from "../assets/images/tshirt/green2.png";
-import green3 from "../assets/images/tshirt/green3.png";
-import green4 from "../assets/images/tshirt/green4.png";
 // CAMISETAS PURPLE
 import purple1 from "../assets/images/tshirt/purple1.png";
 import purple2 from "../assets/images/tshirt/purple2.png";
@@ -61,17 +59,21 @@ import purple4 from "../assets/images/tshirt/purple4.png";
 import red1 from "../assets/images/tshirt/red1.png";
 import red2 from "../assets/images/tshirt/red2.png";
 import red3 from "../assets/images/tshirt/red3.png";
-import red4 from "../assets/images/tshirt/red4.png";
+// CAMISETAS ORANGE
+import orange1 from "../assets/images/tshirt/orange1.png";
+import orange2 from "../assets/images/tshirt/orange2.png";
+import orange3 from "../assets/images/tshirt/orange3.png";
+import orange4 from "../assets/images/tshirt/orange4.png";
 // CAMISETAS WHITE
 import white1 from "../assets/images/tshirt/white1.png";
 import white2 from "../assets/images/tshirt/white2.png";
-import white3 from "../assets/images/tshirt/white3.png";
 
 // CAMISETAS YELLOW
 import yellow1 from "../assets/images/tshirt/yellow1.png";
 import yellow2 from "../assets/images/tshirt/yellow2.png";
 import yellow3 from "../assets/images/tshirt/yellow3.png";
 import yellow4 from "../assets/images/tshirt/yellow4.png";
+import yellow5 from "../assets/images/tshirt/yellow5.png";
 
 export const camisetas = [
   {
@@ -91,11 +93,6 @@ export const camisetas = [
   },
   {
     id: number(),
-    src: black4,
-    name: "black4"
-  },
-  {
-    id: number(),
     src: blue1,
     name: "blue1"
   },
@@ -111,11 +108,6 @@ export const camisetas = [
   },
   {
     id: number(),
-    src: blue4,
-    name: "blue4"
-  },
-  {
-    id: number(),
     src: green1,
     name: "green1"
   },
@@ -123,16 +115,6 @@ export const camisetas = [
     id: number(),
     src: green2,
     name: "green2"
-  },
-  {
-    id: number(),
-    src: green3,
-    name: "green3"
-  },
-  {
-    id: number(),
-    src: green4,
-    name: "green4"
   },
   {
     id: number(),
@@ -171,8 +153,23 @@ export const camisetas = [
   },
   {
     id: number(),
-    src: red4,
-    name: "red4"
+    src: orange1,
+    name: "orange1"
+  },
+  {
+    id: number(),
+    src: orange2,
+    name: "orange2"
+  },
+  {
+    id: number(),
+    src: orange3,
+    name: "orange3"
+  },
+  {
+    id: number(),
+    src: orange4,
+    name: "orange4"
   },
   {
     id: number(),
@@ -183,11 +180,6 @@ export const camisetas = [
     id: number(),
     src: white2,
     name: "white2"
-  },
-  {
-    id: number(),
-    src: white3,
-    name: "white3"
   },
   {
     id: number(),
@@ -208,6 +200,11 @@ export const camisetas = [
     id: number(),
     src: yellow4,
     name: "yellow4"
+  },
+  {
+    id: number(),
+    src: yellow5,
+    name: "yellow5"
   }
 ];
 export const nameSliders = [
@@ -305,13 +302,18 @@ export const designsGame = {
     },
     {
       id: number(),
-      src: mario6,
-      name: "mario6"
+      src: mario7,
+      name: "mario7"
     },
     {
       id: number(),
-      src: mario7,
-      name: "mario7"
+      src: mario8,
+      name: "mario8"
+    },
+    {
+      id: number(),
+      src: mario9,
+      name: "mario9"
     }
   ],
   Wow: [

@@ -5,6 +5,7 @@ import { RouterProvider } from "react-router-dom";
 import LinkProvider from "./provider/LinkProvider";
 import ThemeProvider from "./provider/ThemeProvider";
 import BuyProvider from "./provider/BuyProvider";
+import PedidoProvider from "./provider/PedidoProvider";
 
 //Estilos
 import "./styles/Body.sass";
@@ -13,14 +14,16 @@ import router from "./routes/router.jsx";
 import CamisetasProviders from "./provider/CamisetasProviders";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ThemeProvider>
-      <LinkProvider>
-        <BuyProvider>
-          <CamisetasProviders>
-            <RouterProvider router={router}></RouterProvider>
-          </CamisetasProviders>
-        </BuyProvider>
-      </LinkProvider>
-    </ThemeProvider>
+    <PedidoProvider>
+      <ThemeProvider>
+        <LinkProvider>
+          <BuyProvider>
+            <CamisetasProviders>
+              <RouterProvider router={router}></RouterProvider>
+            </CamisetasProviders>
+          </BuyProvider>
+        </LinkProvider>
+      </ThemeProvider>
+    </PedidoProvider>
   </React.StrictMode>
 );

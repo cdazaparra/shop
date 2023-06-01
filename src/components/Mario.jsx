@@ -4,7 +4,9 @@ import { designsGame } from "../helpers/data";
 import "../styles/Imagen.sass";
 import btnLeft from "../assets/icons/left.png";
 import btnRight from "../assets/icons/right.png";
-const Mario = () => {
+import Pedir from "./Pedir";
+const Mario = (tshirt) => {
+  const camiseta = tshirt["camiseta"];
   const [imagenActual, setImagenActual] = useState(0);
   const cantidad = designsGame.Mario?.length;
   const siguienteImagen = () => {
@@ -43,7 +45,7 @@ const Mario = () => {
               </button>
             </div>
           </div>
-          <div className="ImagenComprar">Pedir</div>
+          <Pedir camiseta={[camiseta, image.name, image.src]}></Pedir>
         </div>
       )
     );

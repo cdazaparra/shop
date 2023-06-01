@@ -14,17 +14,27 @@
     display: grid
     justify-items: start
     .MenuMobileLogoImg
-      width: 50%
+      width: 30%
       margin: 0px 10px
   .MenuMobileCart
     display: grid
-    margin: 0px 10px
+    margin: 10px 10px
     justify-content: end
     justify-items: end
-    .MenuMobileCartImg
-      width: 40px
+    .MenuMobileCartContainer
       display: grid
+      align-items: center
+      justify-content: center
+      justify-items: center
+      .MenuMobileCartImg
+        width: 30px
+        display: grid
+      .MenuMobilePedido
+        display: grid
+        grid-template-columns: 50px 20px
 .dark
   background-color: $bakgroung_dark
+  color: $shirt_colorWhite
 .light
   background-color: $bakgroung_light
+  color: $shirt_colorBlack

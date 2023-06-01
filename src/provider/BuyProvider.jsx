@@ -3,18 +3,30 @@ import { designsGame } from "../helpers/data";
 import { BuyContext } from "../context/BuyContext";
 const BuyProvider = ({ children }) => {
   const [state, setState] = useState(designsGame);
-
   const addToCart = (payload) => {
+    const result = [],
+      uniqueArr = [];
+    const estado = (state) => {
+      state.forEach((item) => {
+        if (uniqueArr.includes(item)) {
+          console.log("uniqueArr: ", uniqueArr);
+        } else {
+          uniqueArr.push(item);
+          console.log("uniqueArr: ", uniqueArr);
+        }
+      });
+    };
+
     setState({
       ...state,
       cart: [...state.cart, payload]
     });
   };
-
-  const removeFromCart = (payload) => {
+  console.log(state);
+  const removeFromCart = (product, index) => {
     setState({
       ...state,
-      cart: state.cart.filter((items) => items.id !== payload.id)
+      cart: state.cart.filter((item) => item !== product)
     });
   };
 
