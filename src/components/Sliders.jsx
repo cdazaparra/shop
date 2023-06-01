@@ -137,6 +137,7 @@ const Sliders = () => {
               <DragonBall slider={slider.name}></DragonBall>
             )}
             <div className="SlidersContainerData">
+              <div></div>
               <h2 className="SlidersTitle">{slider.name}</h2>
               {camisetas.map((slider, index) => {
                 return (
